@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5000/ -->
+<html class=" js csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <title>Home page</title>
+  <link href="./homepage_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./homepage_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./homepage_files/prettyPhoto.css" rel="stylesheet">
+    <link href="./homepage_files/price-range.css" rel="stylesheet">
+    <link href="./homepage_files/animate.css" rel="stylesheet">
+	<link href="./homepage_files/main.css" rel="stylesheet">
+	<link href="./homepage_files/responsive.css" rel="stylesheet">
+	<link href="./homepage_files/gh-fork-ribbon.css" rel="stylesheet">
+	<link href="./homepage_files/angular-busy.css" rel="stylesheet">
+	<link href="./homepage_files/angular.rangeSlider.css" rel="stylesheet">
+	<link href="./homepage_files/stars.css" rel="stylesheet">
+	 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="./homepage_files/logo.png">  
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:5000/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:5000/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:5000/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://localhost:5000/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" href="./homepage_files/loading-bar.css" type="text/css" media="all">
+<script id="cr-js" type="text/javascript" src="./homepage_files/jquery.ba-postmessage.js"></script></head>
+
+<body>
+<!--<button>clickme !!!!!!</button>
+<div id="abc"></div> -->
+  <header>
+
+   <header id="header"><!--header-->
+      <div class="header_top"><!--header_top-->
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="contactinfo">
+                     <ul class="nav nav-pills">
+                        <li><a href="http://localhost:5000/#"><i class="fa fa-phone"></i> +1 4166540989</a></li>
+                        <li><a href="http://localhost:5000/#"><i class="fa fa-envelope"></i> info@yeobid.com</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div class="social-icons pull-right">
+                     <ul class="nav navbar-nav">
+                        <li><a href="http://localhost:5000/#" target="_self"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://localhost:5000/#" target="_self"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://localhost:5000/#" target="_self"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="http://localhost:5000/#" target="_self"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="http://localhost:5000/#" target="_self"><i class="fa fa-google-plus"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div><!--/header_top-->
+        <div id="peek" class="hide" ng-show="bidWait"><div class="seller-loader-container-overlay"><div class="loader"></div><span>Waiting For Seller to Confirm..</span></div></div>
+        <div id="peek" class="confirm-status hide" ng-show="!bidWait &amp;&amp; processedBidsList!=null &amp;&amp; processedBidsList.size&gt;0"><div class="seller-loader-container-overlay confirm"><div class="loader"></div><span>yourbid has been confirmed <a href="http://localhost:5000/#/" class="btn btn-default acheckout"><i class="fa fa-shopping-cart"></i>Checkout</a> </span></div></div>
+
+      <div class="header-middle"><!--header-middle-->
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="logo pull-left item" style=" width: 285px;padding-left: 0; ">
+                  <!-- <h1 style="    margin-top: 0;    font-size: 34px;"><span>yeobid.com</span></h1> -->
+                     <a href="http://localhost:5000/#/"><img src="./homepage_files/logo.png" alt="" target="_self"></a>
+                  </div>
+                  <div class="btn-group pull-right hide">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                           India
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="http://localhost:5000/#">India</a></li>
+                           <li><a href="http://localhost:5000/#">UK</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                           DOLLAR
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="http://localhost:5000/#">INR</a></li>
+                           <li><a href="http://localhost:5000/#">Dollar</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-8">
+                  <div class="shop-menu pull-right">
+                     <ul class="nav navbar-nav">
+                        <li><a href="http://localhost:5000/#/account"><i class="fa fa-user"></i> Account</a></li><!--  <span ng-show="obj.unreadCount!=0" style="color:red;"></span> -->
+                        <li><a href="http://localhost:5000/#"><i class="fa fa-star"></i> Wishlist</a></li>
+                        <li><a href="http://localhost:5000/checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                        <li><a href="http://localhost:5000/cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                        <li ng-show="!user.loggedIn"><a href="http://localhost:5000/#/login"><i class="fa fa-lock"></i> Login</a></li>
+                        <li ng-show="user.loggedIn"><a href="http://localhost:5000/#/" ng-click="logout()">Logout</a></li>
+                     </ul><div class="col-sm-3 pull-right">
+                  <form method="get" action="" ng-show="!obj.homepage">
+                     <div class="input-group" ng-show="!obj.homepage">
+                        <input ng-show="!obj.homepage" type="text" placeholder="Search" class="form-control hero-search" my-enter="search()" ng-model="obj.query">
+                     </div>
+                  </form>
+      
+               </div>
+                  </div>
+               </div>
+               <div class="[ container text-center ]">
+    <div class="[ row ]">
+        <div class="[ col-xs-12 ]" style="padding-bottom: 30px;">
+            <p> YeoBid fullfilment partners <a href="http://localhost:5000/#" target="_self" id="brand-link">Click me to see !!</a>.  We belive in customer satisfaction.</p>
+        </div>
+    </div>
+</div>
+<div class="[ container text-center ]">
+    <div id="brand-container" class="[ row ]" style="display:none">
+        <div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2 ]" role="tabpanel">
+            <div class="[ col-xs-4 col-sm-12 ]">
+                <!-- Nav tabs -->
+                <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="http://localhost:5000/#dustin" aria-controls="dustin" role="tab" data-toggle="tab" target="_self">
+                            <img class="img-circle" src="./homepage_files/vijay.png">
+                            <span class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="http://localhost:5000/#daksh" aria-controls="daksh" role="tab" data-toggle="tab" target="_self">
+                            <img class="img-circle" src="./homepage_files/croma.png">
+                            <span class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="http://localhost:5000/#anna" aria-controls="anna" role="tab" data-toggle="tab" target="_self">
+                            <img class="img-circle" src="./homepage_files/reliance.gif">
+                            <span class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="http://localhost:5000/#wafer" aria-controls="wafer" role="tab" data-toggle="tab" target="_self">
+                            <img class="img-circle" src="./homepage_files/future.png">
+                            <span class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="[ col-xs-8 col-sm-12 col-md-offset-3 ]">
+                <!-- Tab panes -->
+                <div class="tab-content" id="tabs-collapse">
+                    <div role="tabpanel" class="tab-pane fade in active" id="dustin">
+                        <div class="tab-inner">
+                            <p class="lead">Etiam tincidunt enim et pretium efficitur. Donec auctor leo sollicitudin eros iaculis sollicitudin.</p>
+                            <hr>
+                                <p>
+                                    <strong class="text-uppercase">VijaySales</strong>
+                                </p>
+                                <p>
+                                    <em class="text-capitalize"> Electronis</em> leading 
+                                    <a href="http://localhost:5000/#">Store</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="daksh">
+                            <div class="tab-inner">
+                                <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+                                <hr>
+                                    <p>
+                                        <strong class="text-uppercase">Croma</strong>
+                                    </p>
+                                    <p>
+                                        <em class="text-capitalize"> Tata</em> 
+                                        <a href="http://localhost:5000/#">Product</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="anna">
+                                <div class="tab-inner">
+                                    <p class="lead">Nullam suscipit ante ac arcu placerat, nec sagittis quam volutpat. Vestibulum aliquam facilisis velit ut ultrices.</p>
+                                    <hr>
+                                        <p>
+                                            <strong class="text-uppercase">Relaince Digital</strong>
+                                        </p>
+                                        <p>
+                                            <em class="text-capitalize"> Reliance</em> 
+                                            <a href="http://localhost:5000/#">Product</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="wafer">
+                                    <div class="tab-inner">
+                                        <p class="lead"> Fusce erat libero, fermentum quis sollicitudin id, venenatis nec felis. Morbi sollicitudin gravida finibus.</p>
+                                        <hr>
+                                            <p>
+                                                <strong class="text-uppercase">Future Bazaar</strong>
+                                            </p>
+                                            <p>
+                                                <em class="text-capitalize">Future</em> of 
+                                                <a href="http://localhost:5000/#">Electronics</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div><!--/header-middle-->
+ 
+   </header><!--/header-->
+
+
+	 
+
+	 
+</header>
+
+
+<div class="container" ng-controller="mainController">
+		<div class="row">
+			   <div class="col-sm-3 topNaV">
+               <div class="left-sidebar">
+                  <h2>Categories</h2>
+                  <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordian" href="http://localhost:5000/#sportswear" target="_self" class="collapsed">
+                                 <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                 Sound &amp; Vision
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="sportswear" class="panel-collapse collapse" style="height: 0px;">
+                           <div class="panel-body">
+                              <ul>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Televisions&#39;)" target="_self">Televisions</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;DVD Blueray&#39;)" target="_self">DVD, Blu-ray, Home Cinema &amp; Sound Bars</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Freesat&#39;)" target="_self">Freeview, Freesat &amp; Streaming </a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;TV Accessories&#39;)" target="_self">TV Stands &amp; Accessories</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Cameras&#39;)" target="_self">Cameras &amp; Camcorders </a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;MP3 Players&#39;)" target="_self">iPods &amp; MP3 Players</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Headphones&#39;)" target="_self">Headphones</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Radios&#39;)" target="_self">Radios</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Audio&#39;)" target="_self">Audio</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Nav&#39;)" target="_self">Sat Nav</a></li>
+
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordian" href="http://localhost:5000/#mens" target="_self" class="collapsed">
+                                 <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                 Computing &amp; Phones
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="mens" class="panel-collapse collapse" style="height: 0px;">
+                           <div class="panel-body">
+                              <ul>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;iPad Or Tablet&#39;)" target="_self">iPad &amp; Tablets</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Laptops&#39;)" target="_self">Laptops &amp; MacBooks</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Desktops&#39;)" target="_self">Desktops &amp; iMacs</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Computer&#39;)" target="_self">Computer &amp; Tablet Accessories</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Printers&#39;)" target="_self">Printers &amp; Ink</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Software&#39;)" target="_self">Software</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Gaming&#39;)" target="_self">Gaming</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Telephones&#39;)" target="_self">Telephones</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Mobile Accessories&#39;)" target="_self">Mobile Phones &amp; Accessories</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;eReaders&#39;)" target="_self">eReaders</a></li>
+                                 <li><a href="http://localhost:5000/#">Wearable Tech</a></li>
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordian" href="http://localhost:5000/#womens" target="_self" class="collapsed">
+                                 <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                 Home Appliances
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="womens" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <ul>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Washing Machines&#39;)" target="_self">Washing Machines</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Washer Dryers&#39;)" target="_self">Washer Dryers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Tumble Dryers&#39;)" target="_self">Tumble Dryers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Fridges Freezers&#39;)" target="_self">Fridges &amp; Freezers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Dishwashers&#39;)" target="_self">Dishwashers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Cookers or Ovens&#39;)" target="_self">Cookers &amp; Ovens</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Appliances&#39;)" target="_self">Integrated Appliances</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Cooker Hoods&#39;)" target="_self">Cooker Hoods</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Lawnmowers&#39;)" target="_self">Lawnmowers &amp; Power Tools</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Appliances&#39;)" target="_self">John Lewis Branded Appliances</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Delivery&#39;)" target="_self">Express Delivery</a></li>
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordian" href="http://localhost:5000/#smallAppliances" target="_self" class="collapsed">
+                                 <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                 Small Appliances
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="smallAppliances" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <ul>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Vacuum Cleaners&#39;)" target="_self">Vacuum Cleaners</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Ironing&#39;)" target="_self">Ironing</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Food Processors&#39;)" target="_self">Food Processors, Mixers &amp; Blenders</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Coffee Machines&#39;)" target="_self">Coffee Machines</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Kettle&#39;)" target="_self">Kettles </a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Toaster&#39;)" target="_self">Toasters</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Microwave&#39;)" target="_self">Microwaves</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Cooking&#39;)" target="_self">Cooking Appliances</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Fans Or Heaters&#39;)" target="_self">Fans &amp; Heaters</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Hair Styling&#39;)" target="_self">ghd &amp; Hair Styling</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Personal Care OR Shavers Or Dental&#39;)" target="_self">Personal Care, Shavers &amp; Dental</a></li>
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordian" href="http://localhost:5000/#highlights" target="_self" class="collapsed">
+                                 <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                 Highlights
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="highlights" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <ul>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Wireless Music Players&#39;)" target="_self">Sonos Wireless Music Players</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Slide &amp; Hide Oven&#39;)" target="_self">Neff Slide &amp; Hide Ovens</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;4K TV&#39;)" target="_self">The Best of the Best Premium 4K TVs</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Kenwood Food Mixers&#39;)" target="_self">Kenwood Food Mixers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Nutribullet&#39;)" target="_self">Nutribullet </a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;MacBook&#39;)" target="_self">New MacBook</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Laptops&#39;)" target="_self">Off To University</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Home Appliances&#39;)" target="_self">Smart Home</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Lighting&#39;)" target="_self">Lighting</a></li>
+
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordian" href="http://localhost:5000/#offers" target="_self" class="collapsed">
+                                 <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                 Offers
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="offers" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <ul>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Technology&#39;)" target="_self">Technology Offers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Home Appliance&#39;)" target="_self">Home Appliance Offers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Televisions&#39;)" target="_self">Large Screen TVs</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Printers&#39;)" target="_self">Printers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Laptop&#39;)" target="_self">Laptop Offers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Refrigeration&#39;)" target="_self">Refrigeration Offers</a></li>
+                                 <li><a href="http://localhost:5000/#" ng-click="searchCategory(&#39;Dyson&#39;)" target="_self">Dyson</a></li>
+
+
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+                  </div><!--/category-products-->
+
+               
+
+               </div>
+            </div>
+
+
+
+					<div class="col-lg-6 custompadding googlemap hide">
+		<img src="./homepage_files/hero-image.png" style="width: 100%;">
+		 <!-- <div id="googleMap" style="width:500px;height:380px;"></div> -->
+		<div class="customapheading"><h4 class="customoffer"> Look for offers around you with match your budget</h4></div>
+		</div>
+		<div class="col-lg-9 custompadding custommap customImg">
+		<div class="customtopmargin">
+		<div class="row">
+		<div class="col-lg-7 label-ask "><h2 class="text-center customfont"> Ask for products</h2></div>
+		<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 customtoppadding">
+		<div class="input-group col-md-12">
+				 <form method="get" action="">
+					<div class="input-group">
+					  <input type="text" id="testinput" value="" class="form-control hero-search" my-enter="search()" ng-model="$parent.obj.query">
+					  <span class="input-group-btn">
+						<button class="btn btn-default hero-search-go" type="button" ng-click="search()">Go</button>
+		  				</span> 
+							 </div> 
+						    <input type="submit" class="hidden" value="submit">
+					</form>
+				  <input type="text" class="form-control hero-search hidden" placeholder="Bid here..." my-enter="search()" ng-model="$parent.obj.query">
+				  <span class="input-group-btn">
+					<button class="btn btn-default hero-search-go hidden" type="button" ng-click="search()">Go</button>
+				  
+				  </span>
+			  </div>
+		</div>
+
+		</div>
+		</div>
+		</div>
+
+	 
+		</div>
+ 
+</div>
+
+
+<section>
+		<div class="container">
+
+
+			<div class="row">
+				<div class="col-sm-3">
+				<!-- 	<div class="left-sidebar">
+						<h2>Categories</h2>
+						<div class="panel-group category-products" id="accordian"> 
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear" target="_self">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Sound & Vision
+										</a>
+									</h4>
+								</div>
+								<div id="sportswear" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Televisions</a></li>
+											<li><a href="#">DVD, Blu-ray, Home Cinema & Sound Bars</a></li>
+											<li><a href="#">Freeview, Freesat & Streaming </a></li>
+											<li><a href="#">TV Stands & Accessories</a></li>
+											<li><a href="#">Cameras & Camcorders </a></li>
+											<li><a href="#">iPods & MP3 Players</a></li>
+											<li><a href="#">Headphones</a></li>
+											<li><a href="#">Radios</a></li>
+											<li><a href="#">Audio</a></li>
+											<li><a href="#">Sat Nav</a></li>
+
+
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#mens" target="_self">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Computing & Phones
+										</a>
+									</h4>
+								</div>
+								<div id="mens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">iPad & Tablets</a></li>
+											<li><a href="#">Laptops & MacBooks</a></li>
+											<li><a href="#">Desktops & iMacs</a></li>
+											<li><a href="#">Computer & Tablet Accessories</a></li>
+											<li><a href="#">Printers & Ink</a></li>
+											<li><a href="#">Software</a></li>
+											<li><a href="#">Gaming</a></li>
+											<li><a href="#">Telephones</a></li>
+											<li><a href="#">Mobile Phones & Accessories</a></li>
+											<li><a href="#">eReaders</a></li>
+											<li><a href="#">Wearable Tech</a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#womens" target="_self">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Home Appliances
+										</a>
+									</h4>
+								</div>
+								<div id="womens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Washing Machines</a></li>
+											<li><a href="#">Washer Dryers</a></li>
+											<li><a href="#">Tumble Dryers</a></li>
+											<li><a href="#">Fridges & Freezers</a></li>
+											<li><a href="#">Dishwashers</a></li>
+											<li><a href="#">Cookers & Ovens</a></li>
+											<li><a href="#">Integrated Appliances</a></li>
+											<li><a href="#">Cooker Hoods</a></li>
+											<li><a href="#">Lawnmowers & Power Tools</a></li>
+											<li><a href="#">John Lewis Branded Appliances</a></li>
+											<li><a href="#">Express Delivery</a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+								<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#smallAppliances" target="_self">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Small Appliances
+										</a>
+									</h4>
+								</div>
+								<div id="smallAppliances" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Vacuum Cleaners</a></li>
+											<li><a href="#">Ironing</a></li>
+											<li><a href="#">Food Processors, Mixers & Blenders</a></li>
+											<li><a href="#">Coffee Machines</a></li>
+											<li><a href="#">Kettles	</a></li>
+											<li><a href="#">Toasters</a></li>
+											<li><a href="#">Microwaves</a></li>
+											<li><a href="#">Cooking Appliances</a></li>
+											<li><a href="#">Fans & Heaters</a></li>
+											<li><a href="#">ghd & Hair Styling</a></li>
+											<li><a href="#">Personal Care, Shavers & Dental</a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#highlights" target="_self">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Highlights
+										</a>
+									</h4>
+								</div>
+								<div id="highlights" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Sonos Wireless Music Players</a></li>
+											<li><a href="#">Neff Slide & Hide Ovens</a></li>
+											<li><a href="#">The Best of the Best Premium 4K TVs</a></li>
+											<li><a href="#">Kenwood Food Mixers</a></li>
+											<li><a href="#">Nutribullet	</a></li>
+											<li><a href="#">New MacBook</a></li>
+											<li><a href="#">Off To University</a></li>
+											<li><a href="#">Smart Home</a></li>
+											<li><a href="#">Lighting</a></li>
+
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#offers" target="_self">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Offers
+										</a>
+									</h4>
+								</div>
+								<div id="offers" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Technology Offers</a></li>
+											<li><a href="#">Home Appliance Offers</a></li>
+											<li><a href="#">Save up to ?300 on Large Screen TVs</a></li>
+											<li><a href="#">Save up to ?40 on Printers</a></li>
+											<li><a href="#">Laptop Offers</a></li>
+											<li><a href="#">Refrigeration Offers</a></li>
+											<li><a href="#">Save up to ?100 on Dyson</a></li>
+
+
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div> 
+
+					
+
+					</div> -->
+					</div>
+
+
+
+
+
+
+
+				<div class="col-sm-9 padding-right">
+					<div class="features_items"><!--features_items-->
+						<h2 class="title text-center">Hot Deal</h2>
+						<!-- ngRepeat: r in results | filter:'camera' | limitTo:6 --><div ng-repeat="r in results | filter:&#39;camera&#39; | limitTo:6" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/36802bd2-3af3-4dae-a984-1c6434f4d1ce_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/36802bd2-3af3-4dae-a984-1c6434f4d1ce_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 7991</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG L80 D380 (White)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 7991</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG L80 D380 (White)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'camera' | limitTo:6 --><div ng-repeat="r in results | filter:&#39;camera&#39; | limitTo:6" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/a0d97038-bbd8-47b7-9c22-66310130efd6_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/a0d97038-bbd8-47b7-9c22-66310130efd6_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 12990</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG MAGNA H502F (Gold)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 12990</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG MAGNA H502F (Gold)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'camera' | limitTo:6 --><div ng-repeat="r in results | filter:&#39;camera&#39; | limitTo:6" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://www.cromaretail.com/Images/Catalogue/Product/large/192379.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/192379.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 5649</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Lava Iris X1 Selfie (Dual SIM) (Black)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 5649</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Lava Iris X1 Selfie (Dual SIM) (Black)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'camera' | limitTo:6 -->
+				
+					</div><!--features_items-->
+
+					
+					
+					<div class="category-tab"><!--category-tab-->
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="http://localhost:5000/#tshirt" data-toggle="tab" target="_self">Sony</a></li>
+								<li><a href="http://localhost:5000/#blazers" data-toggle="tab" target="_self">Samsung</a></li>
+								<li><a href="http://localhost:5000/#sunglass" data-toggle="tab" target="_self">Panasonic</a></li>
+								<li><a href="http://localhost:5000/#kids" data-toggle="tab" target="_self">LG</a></li>
+								<li><a href="http://localhost:5000/#poloshirt" data-toggle="tab" target="_self">Onida</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="tshirt">
+									<!-- ngRepeat: r in filteredArray = (results | filter:'sony') | limitTo:3 -->
+				
+							</div>
+
+							<div class="tab-pane fade" id="blazers">
+							<!-- ngRepeat: r in filteredArray = (results | filter:'samsung') | limitTo:3 -->
+				
+								</div>
+
+							<div class="tab-pane fade" id="sunglass">
+							<!-- ngRepeat: r in filteredArray = (results | filter:'panasonic') | limitTo:3 -->
+				
+							</div>
+
+							<div class="tab-pane fade" id="kids">
+						<!-- ngRepeat: r in filteredArray = (results | filter:'LG') | limitTo:3 --><div ng-repeat="r in filteredArray = (results | filter:&#39;LG&#39;) | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/cd055c4e-b4e2-4415-af5f-57af204892e7_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/cd055c4e-b4e2-4415-af5f-57af204892e7_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 26690</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG MJ3283 BKG Microwave</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 26690</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG MJ3283 BKG Microwave</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in filteredArray = (results | filter:'LG') | limitTo:3 --><div ng-repeat="r in filteredArray = (results | filter:&#39;LG&#39;) | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/55c3d088-46a9-4473-a980-3aa62b470cb1_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/55c3d088-46a9-4473-a980-3aa62b470cb1_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 7991</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG VC3316NNT Vacuum Cleaner</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 7991</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG VC3316NNT Vacuum Cleaner</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in filteredArray = (results | filter:'LG') | limitTo:3 --><div ng-repeat="r in filteredArray = (results | filter:&#39;LG&#39;) | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/36802bd2-3af3-4dae-a984-1c6434f4d1ce_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/36802bd2-3af3-4dae-a984-1c6434f4d1ce_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 7991</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG L80 D380 (White)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 7991</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG L80 D380 (White)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in filteredArray = (results | filter:'LG') | limitTo:3 -->
+				
+							</div>
+
+							<div class="tab-pane fade" id="poloshirt">
+						<!-- ngRepeat: r in filteredArray = (results | filter:'Onida') | limitTo:3 -->
+				
+							</div>
+						</div>
+					</div><!--/category-tab-->
+
+				<!-- ngInclude:  --><div ng-show="obj.lastViewed &amp;&amp; obj.lastViewed.length!=0" ng-include="" src="&#39;lastViewed.html&#39;" class="ng-scope"><div class="recommended_items ng-scope"><!--recommended_items-->
+									<h2 class="title text-center">Last viewed items</h2>
+			
+									<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+										<div class="carousel-inner">
+											<div class="item">
+											<!-- ngRepeat: r in obj.lastViewed | limitTo: -3 : 3 track by $index --><div ng-repeat="r in obj.lastViewed | limitTo: -3 : 3 track by $index" class="ng-scope">
+						<div class="col-sm-4">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/97e941ca-5ecc-40ad-a884-078ab055bea7_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/97e941ca-5ecc-40ad-a884-078ab055bea7_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 26691</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG F8091MDL2 5.5 Kg Fully Automatic Washing Machine</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 26691</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG F8091MDL2 5.5 Kg Fully Automatic Washing Machine</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in obj.lastViewed | limitTo: -3 : 3 track by $index --><div ng-repeat="r in obj.lastViewed | limitTo: -3 : 3 track by $index" class="ng-scope">
+						<div class="col-sm-4">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/55c3d088-46a9-4473-a980-3aa62b470cb1_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/55c3d088-46a9-4473-a980-3aa62b470cb1_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 7991</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG VC3316NNT Vacuum Cleaner</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 7991</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG VC3316NNT Vacuum Cleaner</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in obj.lastViewed | limitTo: -3 : 3 track by $index --><div ng-repeat="r in obj.lastViewed | limitTo: -3 : 3 track by $index" class="ng-scope">
+						<div class="col-sm-4">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://www.cromaretail.com/Images/Catalogue/Product/large/192379.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/192379.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 5649</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Lava Iris X1 Selfie (Dual SIM) (Black)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 5649</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Lava Iris X1 Selfie (Dual SIM) (Black)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in obj.lastViewed | limitTo: -3 : 3 track by $index -->
+				
+											</div>
+											<div class="item active">
+											
+											<!-- ngRepeat: r in obj.lastViewed | limitTo : 3 track by $index --><div ng-repeat="r in obj.lastViewed | limitTo : 3 track by $index" class="ng-scope">
+						<div class="col-sm-4">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/060a5426-1cde-400f-a28a-5b902efdb17c_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/060a5426-1cde-400f-a28a-5b902efdb17c_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 13990</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Electrolux ET60EGGL 6 Kg Fully Automatic Washing Machine</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 13990</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Electrolux ET60EGGL 6 Kg Fully Automatic Washing Machine</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in obj.lastViewed | limitTo : 3 track by $index --><div ng-repeat="r in obj.lastViewed | limitTo : 3 track by $index" class="ng-scope">
+						<div class="col-sm-4">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/1156f6c0-da88-4adf-ab3d-2ff7d35bec0c_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/1156f6c0-da88-4adf-ab3d-2ff7d35bec0c_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 21449</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Godrej WTEON650 PFH 6.5 Kg Fully Automatic Washing Machine (Royal Grey)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 21449</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Godrej WTEON650 PFH 6.5 Kg Fully Automatic Washing Machine (Royal Grey)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in obj.lastViewed | limitTo : 3 track by $index --><div ng-repeat="r in obj.lastViewed | limitTo : 3 track by $index" class="ng-scope">
+						<div class="col-sm-4">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/fbfee347-4708-491d-9232-188581590ff3_340x340.jpeg" alt="" ng-show="r.productImage!=null" src="./homepage_files/fbfee347-4708-491d-9232-188581590ff3_340x340.jpeg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 79900</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Sony KDL43W950C 43 (108 cm) Full HD 3D Smart LED TV</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 79900</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Sony KDL43W950C 43 (108 cm) Full HD 3D Smart LED TV</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in obj.lastViewed | limitTo : 3 track by $index -->
+				
+												</div>
+										</div>
+										 <a target="_self" class="left recommended-item-control" href="http://localhost:5000/#recommended-item-carousel" data-slide="prev">
+											<i class="fa fa-angle-left"></i>
+										  </a>
+										  <a target="_self" class="right recommended-item-control" href="http://localhost:5000/#recommended-item-carousel" data-slide="next">
+											<i class="fa fa-angle-right"></i>
+										  </a>
+									</div>
+								</div><!--/recommended_items-->
+			
+</div>
+				
+				<!-- ngInclude:  --><div ng-show="!obj.lastViewed" ng-include="" src="&#39;bestDeals.html&#39;" class="ng-scope ng-hide">	<div class="recommended_items ng-scope"><!--recommended_items-->
+						<h2 class="title text-center">Best Deals</h2>
+
+						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item">
+									<!-- ngRepeat: r in results | filter:'phone' | limitTo:3 --><div ng-repeat="r in results | filter:&#39;phone&#39; | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://www.cromaretail.com/Images/Catalogue/Product/large/152336.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/152336.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 194</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Croma CREA7105 Earphones (Blue)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 194</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Croma CREA7105 Earphones (Blue)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'phone' | limitTo:3 --><div ng-repeat="r in results | filter:&#39;phone&#39; | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://www.cromaretail.com/Images/Catalogue/Product/large/169768.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/169768.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 194</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Croma CREP0114 USB Adaptor</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 194</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Croma CREP0114 USB Adaptor</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'phone' | limitTo:3 --><div ng-repeat="r in results | filter:&#39;phone&#39; | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://www.cromaretail.com/Images/Catalogue/Product/large/174873.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/174873.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 940</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Fenda E200 Soundbar (Black)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 940</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Fenda E200 Soundbar (Black)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'phone' | limitTo:3 -->
+				
+									</div>
+								<div class="item active">
+									<!-- ngRepeat: r in results | filter:'camera' | limitTo:3 --><div ng-repeat="r in results | filter:&#39;camera&#39; | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/36802bd2-3af3-4dae-a984-1c6434f4d1ce_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/36802bd2-3af3-4dae-a984-1c6434f4d1ce_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 7991</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG L80 D380 (White)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 7991</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG L80 D380 (White)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'camera' | limitTo:3 --><div ng-repeat="r in results | filter:&#39;camera&#39; | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://cdn.vijaysales.com/products/a0d97038-bbd8-47b7-9c22-66310130efd6_340x340.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/a0d97038-bbd8-47b7-9c22-66310130efd6_340x340.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 12990</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG MAGNA H502F (Gold)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 12990</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">LG MAGNA H502F (Gold)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'camera' | limitTo:3 --><div ng-repeat="r in results | filter:&#39;camera&#39; | limitTo:3" class="ng-scope">
+						<div class="col-sm-4 col-xs-6">
+						<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img ng-src="http://www.cromaretail.com/Images/Catalogue/Product/large/192379.jpg" alt="" ng-show="r.productImage!=null" src="./homepage_files/192379.jpg">
+										<img src="./homepage_files/product12.jpg" alt="" ng-show="r.productImage===null" class="ng-hide">
+										<h2 class="ng-binding">INR 5649</h2>
+										<p style="height:34px;"><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Lava Iris X1 Selfie (Dual SIM) (Black)</a></p>
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content"><h5 style="color: white;" class="ng-binding">1 online &amp; 0 offline retailers available</h5>
+										
+											   <h2 class="ng-binding">INR 5649</h2>
+											
+										  <p><a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="ng-binding">Lava Iris X1 Selfie (Dual SIM) (Black)</a></p>
+										   
+										<a href="http://localhost:5000/#/productDetail" ng-click="productDetail(r)" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make an offer</a>
+										<br><a href="http://localhost:5000/#" style="
+										    color: white;
+										    padding-bottom: 16px;
+										">Compare product</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						</div><!-- end ngRepeat: r in results | filter:'camera' | limitTo:3 -->
+								</div>
+							</div>
+							 <a class="left recommended-item-control" href="http://localhost:5000/#recommended-item-carousel" data-slide="prev" target="_self">
+								<i class="fa fa-angle-left"></i>
+							  </a>
+							  <a class="right recommended-item-control" href="http://localhost:5000/#recommended-item-carousel" data-slide="next" target="_self">
+								<i class="fa fa-angle-right"></i>
+							  </a>
+						</div>
+					</div> 
+
+				
+</div>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+ 
+   <footer id="footer" class="ng-scope"><!--Footer-->
+      <div class="footer-top">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-2">
+                  <div class="companyinfo">
+                     <h2><span>Yeobid</span> </h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+                  </div>
+               </div>
+               <div class="col-sm-7">
+                  <div class="col-sm-3">
+                     <div class="video-gallery text-center">
+                        <a href="http://localhost:5000/#">
+                           <div class="iframe-img">
+                              <img src="./homepage_files/iframe1.png" alt="">
+                           </div>
+                           <div class="overlay-icon">
+                              <i class="fa fa-play-circle-o"></i>
+                           </div>
+                        </a>
+                        <p>Lorem ipsum</p>
+                        <h2>2Lorem ipsum</h2>
+                     </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                     <div class="video-gallery text-center">
+                        <a href="http://localhost:5000/#">
+                           <div class="iframe-img">
+                              <img src="./homepage_files/iframe2.png" alt="">
+                           </div>
+                           <div class="overlay-icon">
+                              <i class="fa fa-play-circle-o"></i>
+                           </div>
+                        </a>
+                        <p>CLorem ipsum</p>
+                        <h2>2Lorem ipsum</h2>
+                     </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                     <div class="video-gallery text-center">
+                        <a href="http://localhost:5000/#">
+                           <div class="iframe-img">
+                              <img src="./homepage_files/iframe3.png" alt="">
+                           </div>
+                           <div class="overlay-icon">
+                              <i class="fa fa-play-circle-o"></i>
+                           </div>
+                        </a>
+                        <p>Lorem ipsum</p>
+                        <h2>Lorem ipsum</h2>
+                     </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                     <div class="video-gallery text-center">
+                        <a href="http://localhost:5000/#">
+                           <div class="iframe-img">
+                              <img src="./homepage_files/iframe4.png" alt="">
+                           </div>
+                           <div class="overlay-icon">
+                              <i class="fa fa-play-circle-o"></i>
+                           </div>
+                        </a>
+                        <p>Circle of Hands</p>
+                        <h2>24 DEC 2014</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="address">
+                     <img src="./homepage_files/map.png" alt="">
+                     <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 1800001</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-widget">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-2">
+                  <div class="single-widget">
+                     <h2>Service</h2>
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="http://localhost:5000/#">Online Help</a></li>
+                        <li><a href="http://localhost:5000/#">Contact Us</a></li>
+                        <li><a href="http://localhost:5000/#">Order Status</a></li>
+                        <li><a href="http://localhost:5000/#">Change Location</a></li>
+                        <li><a href="http://localhost:5000/#">FAQ�s</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="single-widget">
+                     <h2>Quick Shop</h2>
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="http://localhost:5000/#">Tv</a></li>
+                        <li><a href="http://localhost:5000/#">Washing Machine</a></li>
+                        <li><a href="http://localhost:5000/#">LCD</a></li>
+                        <li><a href="http://localhost:5000/#">Gift Cards</a></li>
+                        <li><a href="http://localhost:5000/#">Lorem ipsum</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="single-widget">
+                     <h2>Policies</h2>
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="http://localhost:5000/#">Terms of Use</a></li>
+                        <li><a href="http://localhost:5000/#">Privecy Policy</a></li>
+                        <li><a href="http://localhost:5000/#">Refund Policy</a></li>
+                        <li><a href="http://localhost:5000/#">Lorem ipsum</a></li>
+                        <li><a href="http://localhost:5000/#">Lorem ipsum</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="single-widget">
+                     <h2>About Shopper</h2>
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="http://localhost:5000/#">Company Information</a></li>
+                        <li><a href="http://localhost:5000/#">Lorem ipsum</a></li>
+                        <li><a href="http://localhost:5000/#">Store Location</a></li>
+                        <li><a href="http://localhost:5000/#">Lorem ipsum</a></li>
+                        <li><a href="http://localhost:5000/#">Lorem ipsum</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-3 col-sm-offset-1">
+                  <div class="single-widget">
+                     <h2>yeobid</h2>
+                     <form action="http://localhost:5000/#" class="searchform ng-pristine ng-valid">
+                        <input type="text" placeholder="Your email address">
+                        <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                        <p>Get the most recent updates from <br>our site and be updated your self...</p>
+                     </form>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-bottom">
+         <div class="container">
+            <div class="row">
+               <p class="pull-left">Copyright � 2015. All rights reserved.</p>
+
+            </div>
+         </div>
+      </div>
+
+   </footer> 
+
+   
+
+
+
+
+ 
+
+ 
+
+
+    <script src="./homepage_files/jquery.js"></script>
+	<script src="./homepage_files/bootstrap.min.js"></script>
+	<script src="./homepage_files/jquery.scrollUp.min.js"></script>
+	<script src="./homepage_files/price-range.js"></script>
+    <script src="./homepage_files/jquery.prettyPhoto.js"></script>
+ 	<script src="./homepage_files/bsn.AutoSuggest_c_2.0.js"></script>
+    <script src="./homepage_files/main.js"></script>
+    <script src="./homepage_files/angular.min.js"></script>
+    <script src="./homepage_files/angular-route.min.js"></script>
+    <script src="./homepage_files/angular-animate.min.js"></script>
+    <script src="./homepage_files/angular.rangeSlider.js"></script>
+	<script src="./homepage_files/loading-bar.js"></script>
+    <script src="./homepage_files/work.js"></script>
+    <script src="./homepage_files/snap.js"></script>
+     <script src="./homepage_files/modenizer.js"></script>
+    <script src="./homepage_files/ng-infinite-scroll.js"></script>
+    <script src="./homepage_files/zoom.js"></script>
+    <link rel="stylesheet" href="./homepage_files/jquery.loader.css" type="text/css">
+   <script src="./homepage_files/jquery.loader.js"></script>
+
+    <script src="./homepage_files/classi.js"></script>
+
+<script type="text/javascript">
+$("button").click(function(){
+	$.get("/ajaxTemplate",function(data,status){
+    console.log("Data: " + data + "\nStatus: " + status);
+    $("#abc").html(data.my_html)
+  });
+
+})
+
+$(document).ready(function(){
+	$("#verticalSlide1").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: false,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:540,
+						visibleItems: 1
+					}, 
+					landscape: { 
+						changePoint:730,
+						visibleItems: 3
+					},
+					tablet: { 
+						changePoint:1024,
+						visibleItems: 4
+					}
+				}
+			});
+$("#verticalSlide0").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: false,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:540,
+						visibleItems: 1
+					}, 
+					landscape: { 
+						changePoint:730,
+						visibleItems: 3
+					},
+					tablet: { 
+						changePoint:1024,
+						visibleItems: 4
+					}
+				}
+			})	
+  
+})
+
+
+
+
+</script>
+
+
+</body></html>
